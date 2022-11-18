@@ -28,6 +28,9 @@
       <% end %>
     </tbody>
   </table>
+  <div class="table_footer">
+    <p>Total amount: <%= @expenses.sum(:amount) %> $</p>
+  </div>
 </div>
 
 <div class="new_expenses_btn">
