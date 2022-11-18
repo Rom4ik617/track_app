@@ -3,8 +3,8 @@ class ExpensesController < ApplicationController
 
   # GET /expenses or /expenses.json
   def index
-    @expenses = Expense.all
-    @expenses = Expense.where(user_id:current_user.id)
+    @q = Expense.where(user_id:current_user.id).ransack(params[:q])
+    @expenses = @q.result(distinct: true)
   end
 
   # GET /expenses/1 or /expenses/1.json
