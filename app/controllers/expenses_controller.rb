@@ -18,6 +18,7 @@ class ExpensesController < ApplicationController
 
   # GET /expenses/1/edit
   def edit
+    access_check()
   end
 
   # POST /expenses or /expenses.json
@@ -51,6 +52,8 @@ class ExpensesController < ApplicationController
 
   # DELETE /expenses/1 or /expenses/1.json
   def destroy
+    access_check()
+    
     @expense.destroy
 
     respond_to do |format|
@@ -68,5 +71,11 @@ class ExpensesController < ApplicationController
     # Only allow a list of trusted parameters through.
     def expense_params
       params.require(:expense).permit(:title, :description, :amount, :category, :user_id)
+    end
+
+    def access_check
+      if current_user.id != @expense.user_id
+        redirect_to root_path
+      end
     end
 end

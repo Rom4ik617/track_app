@@ -11,3 +11,7 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+window.copyToClipboard = function() {
+  navigator.clipboard.writeText(window.location.href);
+}

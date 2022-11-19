@@ -20,5 +20,8 @@
   <%= @expense.category %>
 </p>
 
-<%= link_to 'Edit', edit_expense_path(@expense) %> |
-<%= link_to 'Back', expenses_path %>
+<% user_id = !user_signed_in? || current_user.id; if @expense.user_id == user_id %>
+  <%= link_to 'Edit', edit_expense_path(@expense) %> |
+  <%= link_to 'Back', expenses_path %> |
+  <%= link_to 'Copy link', '', :onclick => "copyToClipboard()" %>
+<% end %>
