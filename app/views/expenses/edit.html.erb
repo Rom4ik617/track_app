@@ -1,6 +1,14 @@
-<h1>Editing Expense</h1>
+<body class="body_bg">
+  <main class="main_products">
+    <h1 class="h_reg">Editing Expense</h1>
 
-<%= render 'form', expense: @expense %>
+    <%= render 'form', expense: @expense %>
 
-<%= link_to 'Show', @expense %> |
-<%= link_to 'Back', expenses_path %>
+    <br>
+
+    <div class="moder_show_btns">
+      <%= link_to 'Show', @expense %>
+      <%= link_to 'Back', expenses_path %>
+    </div>
+  </main>
+</body>

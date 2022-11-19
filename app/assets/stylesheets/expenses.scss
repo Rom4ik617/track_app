@@ -20,3 +20,132 @@
     margin-right: 50px;
   }
 }
+
+.body_bg {
+  background-color: #eee;
+}
+
+.products_margin_top {
+  margin-top: 10px;
+}
+
+.main_products {
+  max-width: 500px;
+  padding: 15px 35px;
+  margin: 45px auto;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#products div {
+  background-color: #eee;
+  margin-top: 20px;
+  padding: 15px 15px;
+  min-width: 250px;
+  border-radius: 10px;
+}
+
+.main_products_items {
+  display: flex;
+  justify-content: center;
+}
+
+#card {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.input_number_products {
+  border: 1px solid #D4D9E2;
+  padding: 10px 10px;
+  width: 50px;
+}
+
+.product_submit_btn {
+  padding: 11px 40px;
+  background: black;
+  color: white;
+  border: inherit;
+  cursor: pointer;
+  margin-left: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.new_product_btn, .show_product_btn {
+  padding: 15px 165px;
+  background: black;
+  color: white;
+  border: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.moder_show_btns {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card_items {
+  background-color: #eee;
+  margin-top: 20px;
+  padding: 15px 15px;
+  min-width: 250px;
+  border-radius: 10px;
+}
+
+.delete_product_btn {
+  padding: 10px 40px;
+  background: #d11a2a;
+  color: white;
+  border: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.show_moder_products {
+  padding: 10px 30px;
+  background: black;
+  color: white;
+  border: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.input_edit_product {
+  border: 1px solid #D4D9E2;
+  padding: 10px 10px;
+  width: 200px;
+}
+
+.products_edit_menu {
+  background-color: #eee;
+  margin-top: 20px;
+  padding: 15px 15px;
+  border-radius: 10px;
+  max-width: 225px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.edit_submit_button {
+  input {
+    padding: 10px 30px;
+    background: black;
+    color: white;
+    border: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}

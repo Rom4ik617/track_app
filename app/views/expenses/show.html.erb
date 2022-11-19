@@ -1,27 +1,33 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @expense.title %>
-</p>
+<body class="body_bg">
+  <main class="main_products">
+    <p>
+      <strong>Title:</strong>
+      <%= @expense.title %>
+    </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @expense.description %>
-</p>
+    <p>
+      <strong>Description:</strong>
+      <%= @expense.description %>
+    </p>
 
-<p>
-  <strong>Amount:</strong>
-  <%= @expense.amount %>
-</p>
+    <p>
+      <strong>Amount:</strong>
+      <%= @expense.amount %>
+    </p>
 
-<p>
-  <strong>Category:</strong>
-  <%= @expense.category %>
-</p>
+    <p>
+      <strong>Category:</strong>
+      <%= @expense.category %>
+    </p>
 
-<% user_id = !user_signed_in? || current_user.id; if @expense.user_id == user_id %>
-  <%= link_to 'Edit', edit_expense_path(@expense) %> |
-  <%= link_to 'Back', expenses_path %> |
-  <%= link_to 'Copy link', '', :onclick => "copyToClipboard()" %>
-<% end %>
+    <div style="margin-top: 20px">
+      <% user_id = !user_signed_in? || current_user.id; if @expense.user_id == user_id %>
+        <%= link_to 'Edit', edit_expense_path(@expense) %> |
+        <%= link_to 'Back', expenses_path %> |
+        <%= link_to 'Copy link', '', :onclick => "copyToClipboard()" %>
+      <% end %>
+    </div>
+  </main>
+</body>
