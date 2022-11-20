@@ -1,5 +1,13 @@
-<h1>New Expense</h1>
+<body class="body_bg">
+  <main class="main_products">
+    <h1 class="h_reg">New Expense</h1>
 
-<%= render 'form', expense: @expense %>
+    <%= render "form", expense: @expense %>
 
-<%= link_to 'Back', expenses_path %>
+    <br>
+
+    <div style="display: flex; justify-content: center">
+      <%= link_to "Back", expenses_path %>
+    </div>
+  </main>
+</body>

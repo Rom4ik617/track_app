@@ -12,27 +12,29 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+  <div class="products_edit_menu">
+    <div>
+      <%= form.label :title, style: "font-weight: bold" %>
+      <%= form.text_field :title, class: "input_edit_product" %>
+    </div>
+
+    <div>
+      <%= form.label :description, style: "font-weight: bold" %>
+      <%= form.text_area :description, class: "input_edit_product" %>
+    </div>
+
+    <div>
+      <%= form.label :amount, style: "font-weight: bold" %>
+      <%= form.text_field :amount, class: "input_edit_product" %>
+    </div>
+
+    <div>
+      <%= form.label :category, style: "font-weight: bold" %>
+      <%= form.select :category, options_for_select(Expense::CATEGORIES, form.object.category), {include_blank: true}, required: true, class: "input_edit_product" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
-  </div>
-
-  <div class="field">
-    <%= form.label :amount %>
-    <%= form.text_field :amount %>
-  </div>
-
-  <div class="field">
-    <%= form.label :category %>
-    <%= form.select :category, options_for_select(Expense::CATEGORIES, form.object.category), {include_blank: true}, required: true %>
-  </div>
-
-  <div class="actions">
+  <div class="edit_submit_button">
     <%= form.submit %>
   </div>
 <% end %>
