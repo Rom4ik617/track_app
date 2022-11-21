@@ -1,24 +1,49 @@
-# README
+<h1> Expenses tracking app </h1>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Information
 
-Things you may want to cover:
+"Expenses tracking app" is a program for tracking minimum expenses on Ruby on Rails framework. You could test it [online](https://money-track-app.herokuapp.com/).
 
-* Ruby version
+## Features
 
-* System dependencies
+This application allows you:
 
-* Configuration
+* Register or login to your account
+* Create expenses with title, description, amount and category
+* Check, edit and delete expenses
+* Copy expenses link and send to another user
 
-* Database creation
+## Getting started
 
-* Database initialization
+You need to have the following tools.
 
-* How to run the test suite
+- Ruby 2.6.3
+- Rails 6.1.7
+- Git
 
-* Services (job queues, cache servers, search engines, etc.)
+##### 1. Check out the repository
 
-* Deployment instructions
+```bash
+git clone https://github.com/Rom4ik617/track_app.git
+cd track_app
+```
 
-* ...
+##### 2. Create and setup the database and bundle
+
+Run the following commands to create and setup the database, and application libraries.
+
+```ruby
+rails db:create
+rails db:migrate
+bundle install
+```
+
+##### 3. Start the Rails server
+
+You can start the rails server with the following command.
+
+```ruby
+rails s
+```
+
+Now you can go to http://localhost:3000
