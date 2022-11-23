@@ -11,6 +11,7 @@ This application allows you:
 * Register or login to your account
 * Create expenses with title, description, amount and category
 * Check, edit and delete expenses
+* Sort expenses
 * Copy expenses link and send to another user
 
 ## Getting started
